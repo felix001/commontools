@@ -4,8 +4,8 @@ commontools is set of tools to help with common tasks
 # installation
 
 ```
-sudo pip install git+https://github.com/felix001/common-tools.git
-sudo pip install git+ssh://git@github.com/felix001/common-tools.git
+sudo pip install git+https://github.com/felix001/commontools.git
+sudo pip install git+ssh://git@github.com/felix001/commontools.git
 ```
 
 # convert.py
