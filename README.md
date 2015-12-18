@@ -1,5 +1,5 @@
 # About
-common-tools is set of tools to help with common tasks
+commontools is set of tools to help with common tasks
 
 # Installation
 
