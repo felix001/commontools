@@ -1,7 +1,7 @@
-# About
+# commontools
 commontools is set of tools to help with common tasks
 
-# Installation
+# installation
 
 ```
 sudo pip install git+https://github.com/felix001/common-tools.git
