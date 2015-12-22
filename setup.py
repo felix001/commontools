@@ -6,5 +6,4 @@ setup(
     author="Rick Donato",
     author_email="rickj07@gmail.com",
     description="commontools",
-    scripts = ['convert.py'],
 )
