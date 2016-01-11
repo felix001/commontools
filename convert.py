@@ -28,3 +28,35 @@ def get_ranges(input):
         else:
             seq_number_result.append(str(seq_num[0]))
     return seq_number_result
+
+def to_table(pre_text,delim=" |",output=True):
+    """
+    Generates a padded table.
+    Args:
+        pre_text: a list of lists
+        delim : the delimiter used between elements
+        output : output type
+
+    Returns:
+        padding table or converted list of lists
+    """
+    colwidth = list()
+    templist = list()
+    for y in range(len(pre_text[0])):
+        templist.append([])
+        for x in range(len(pre_text)):
+            templist[y].append(pre_text[x][y])
+    for y in range(len(templist)):
+        max = 0
+        for a in templist[y][:]:
+            if len(a) > max:
+                max = len(a)
+        colwidth.append(max)
+    for y in pre_text[:]:
+        for x in range(len(colwidth)):
+            y[x] = y[x].ljust(colwidth[x]) + delim
+    if output:
+        for z in range(len(pre_text)):
+            print "".join(pre_text[z])
+        return True 
+    return pre_text
