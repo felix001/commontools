@@ -38,7 +38,7 @@ def to_table(pre_text,delim=" |",output=True):
         output : output type
 
     Returns:
-        padding table or converted list of lists
+        padded table or converted list of lists
     """
     colwidth = list()
     templist = list()
