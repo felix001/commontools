@@ -30,3 +30,25 @@ to_table(list_lists)
 write_file(data='123', path=False, filename='example.txt')
 # True
 ```
+
+# logee.py
+Allows you to log the input and output for each function of a class by just declaring a single class level decorator.
+
+```
+from logee import log
+
+@log
+class exampleclass(object):
+    def __init__(self,size=False):
+        self.size = size
+        
+    def funt1(self,weight=None):
+        return weight
+        
+    def funt2(self,shape=None):
+        return shape
+
+example output...
+10-08 23:27 root         DEBUG    input_args=() input_kwargs={} return=None
+10-08 23:27 root         DEBUG    input_args=() input_kwargs={'weight': 333} return=333
+```
