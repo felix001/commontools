@@ -1,5 +1,4 @@
 import logging
-import inspect
 from functools import wraps
 
 def log_class_function(func):
