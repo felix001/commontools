@@ -8,9 +8,10 @@ def class_method_logger(func):
     @wraps(func)
     def wrapper(self, *args, **kwargs):
         try:    
-            logger.debug("input args=%s kwargs=%s" % (str(args),str(kwargs)))
             response = func(self, *args, **kwargs)
-            logger.debug("return=%s", str(response))
+            logger.debug("input_args=%s input_kwargs=%s return=%s" % (args,
+                                                                      kwargs,
+                                                                      response))
             return response
         except Exception as exc:
             logger.exception(exc)
@@ -20,9 +21,10 @@ def class_method_logger(func):
 def method_logger(func):
     def wrapper(*args, **kwargs):
         try:
-            logger.debug("input args=%s kwargs=%s" % (str(args),str(kwargs)))
             response = func(*args, **kwargs)
-            logger.debug("return=%s", str(response))
+            logger.debug("input_args=%s input_kwargs=%s return=%s" % (args,
+                                                                      kwargs,
+                                                                      response))
             return response
         except Exception as exc:
             logger.exception(exc)
