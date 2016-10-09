@@ -31,7 +31,7 @@ write_file(data='123', path=False, filename='example.txt')
 # True
 ```
 
-# logee.py
+# log.py
 Allows you to log the input and output for each function of a class by just declaring a single class level decorator.
 
 ```
