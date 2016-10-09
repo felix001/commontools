@@ -51,10 +51,10 @@ class exampleclass(object):
 @method_logger
 def funt3(color=None):
     return color
+```
 
-example output...
+Example output ... 
+```
 10-08 23:27 root         DEBUG    input_args=() input_kwargs={} return=None
 10-08 23:27 root         DEBUG    input_args=() input_kwargs={'weight': 333} return=333
-
-
 ```
