@@ -1,4 +1,5 @@
 import logging
+from general import decorate_all_methods
 from functools import wraps
 
 def class_method_logger(func):
