@@ -35,9 +35,9 @@ write_file(data='123', path=False, filename='example.txt')
 Allows you to log the input and output for each function of a class by just declaring a single class level decorator.
 
 ```
-from logee import log
+from log import class_logger,method_logger
 
-@log
+@class_logger
 class exampleclass(object):
     def __init__(self,size=False):
         self.size = size
@@ -48,7 +48,13 @@ class exampleclass(object):
     def funt2(self,shape=None):
         return shape
 
+@method_logger
+def funt3(color=None):
+    return color
+
 example output...
 10-08 23:27 root         DEBUG    input_args=() input_kwargs={} return=None
 10-08 23:27 root         DEBUG    input_args=() input_kwargs={'weight': 333} return=333
+
+
 ```
