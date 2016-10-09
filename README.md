@@ -32,7 +32,7 @@ write_file(data='123', path=False, filename='example.txt')
 ```
 
 # log.py
-Allows you to log the input and output for each function of a class by just declaring a single class level decorator.
+Allows you to log the input and output for each function.
 
 ```
 from log import class_logger,method_logger
