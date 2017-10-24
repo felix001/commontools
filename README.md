@@ -24,13 +24,6 @@ to_table(list_lists)
 # 123    |12453     |125454 |21332        |
 ```
 
-# file.py
-
-```
-write_file(data='123', path=False, filename='example.txt')
-# True
-```
-
 # log.py
 Allows you to log the input and output for each function.
 
