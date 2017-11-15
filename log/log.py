@@ -1,5 +1,5 @@
 import logging
-from general import decorate_all_methods
+from general.general import decorate_all_methods
 from functools import wraps
 
 logger = logging.getLogger(__name__)
