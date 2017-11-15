@@ -1,5 +1,6 @@
 Provides the ability to log the input and output for a function, either directly or whether it is within class.
 
+**Example**
 ```
 import logging
 
@@ -8,7 +9,8 @@ logging.basicConfig(level=logging.DEBUG,
                     datefmt='%m-%d %H:%M',
                     filename='/tmp/test.log',
                     filemode='w')
-
+```
+```
 from log import class_logger, method_logger
 
 @class_logger
