@@ -32,7 +32,7 @@ def funct3(color=None):
 >>> c.funct1(weight=123)
 ```
 
-Example output ... 
+Output:
 ```
 [rick@server ~]$ cat /tmp/test.log
 11-15 15:17 log          DEBUG    input_args=() input_kwargs={'size': True} return=None
