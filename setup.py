@@ -6,5 +6,5 @@ setup(
     author="Rick Donato",
     author_email="rickj07@gmail.com",
     description="commontools",
-    py_modules = ['convert', 'log', 'general', 'file']
+    py_modules = ['convert.convert', 'log.log', 'general.general', 'file.file']
 )
