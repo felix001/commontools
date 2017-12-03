@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="commontools",
-    version="2.0",
+    version="2.0.1",
     author="Rick Donato",
     author_email="rickj07@gmail.com",
     description="commontools",
