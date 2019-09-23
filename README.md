@@ -3,6 +3,6 @@
 
 # Installation
 ```
-sudo pip install git+https://github.com/rickd3/commontools.git
-sudo pip install git+ssh://git@github.com/rickd3/commontools.git
+sudo pip install git+https://github.com/rickdonato/commontools.git
+sudo pip install git+ssh://git@github.com/rickdonato/commontools.git
 ```
